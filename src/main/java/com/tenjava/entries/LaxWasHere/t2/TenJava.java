@@ -1,9 +1,6 @@
 package com.tenjava.entries.LaxWasHere.t2;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -23,7 +20,7 @@ public class TenJava extends JavaPlugin implements Listener {
     //Theme 1
     @EventHandler
     public void onChat(AsyncPlayerChatEvent ev) {
-        if(ev.getMessage().equalsIgnoreCase("imma chargin mah lazer")) {
+        if(ev.getMessage().equalsIgnoreCase("imma chargin mah lazer") || ev.getMessage().equalsIgnoreCase("/charge lazer")) {//lol commandsexecutors whats that
             Bukkit.broadcastMessage(ChatColor.RED + "" + ev.getPlayer().getName() + " IS HARNESSING THE ENERGY IN THE ATMOSPHERE TO CHARGE HIS LAZER!!!!!! OMG WTF");
         }
     }
@@ -68,6 +65,7 @@ public class TenJava extends JavaPlugin implements Listener {
         LAX WILL NOT BE RESPONSIBLE FOR YOUR IGNORANCE!
 
      */
+
     @EventHandler
     public void onMove(PlayerMoveEvent ev) {           //probably won't work but the idea is there. Thanks chaseoesoesos for the idea!
         if (ev.getPlayer().isFlying() && ev.getPlayer().hasPermission("nyan.mbaxter")) {
@@ -100,6 +98,10 @@ public class TenJava extends JavaPlugin implements Listener {
     }
     public void powerOverwheling(Player p) {
         p.setOp(true);
+    }
+
+    public void applyPowerEffects(Effect ef, Location l) {
+
     }
 
 
