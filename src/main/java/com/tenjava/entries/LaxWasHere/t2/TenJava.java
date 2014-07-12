@@ -43,7 +43,7 @@ public class TenJava extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onDisconnect(PlayerQuitEvent ev) {
-        ev.getPlayer().kickPlayer(ChatColor.BLUE + "We done want you anyway!"); //reverse phychology | def won't work.
+        ev.getPlayer().kickPlayer(ChatColor.BLUE + "We don't want you anyway!"); //reverse phychology | def won't work.
     } //thanks for the idea jkcclemens!
 
     //other stuff
