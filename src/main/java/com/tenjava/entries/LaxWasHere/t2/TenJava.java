@@ -72,13 +72,13 @@ public class TenJava extends JavaPlugin implements Listener {
     public void onMove(PlayerMoveEvent ev) {           //probably won't work but the idea is there. Thanks chaseoesoesos for the idea!
         if (ev.getPlayer().isFlying() && ev.getPlayer().hasPermission("nyan.mbaxter")) {
             Location plc = ev.getPlayer().getLocation();
-            Location red = new Location(plc.getWorld(), plc.getBlockX() + 3, plc.getBlockY(), plc.getBlockZ());
-            Location orange = new Location(plc.getWorld(), plc.getBlockX() + 2, plc.getBlockY(), plc.getBlockZ());
-            Location yellow = new Location(plc.getWorld(), plc.getBlockX() + 1, plc.getBlockY(), plc.getBlockZ());
+            Location red = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() + 3, plc.getBlockZ());
+            Location orange = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() + 2, plc.getBlockZ());
+            Location yellow = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() + 1, plc.getBlockZ());
             Location green = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY(), plc.getBlockZ());
-            Location blue = new Location(plc.getWorld(), plc.getBlockX() -1, plc.getBlockY(), plc.getBlockZ());
-            Location indigo = new Location(plc.getWorld(), plc.getBlockX() -2, plc.getBlockY(), plc.getBlockZ());
-            Location violet = new Location(plc.getWorld(), plc.getBlockX() -3, plc.getBlockY(), plc.getBlockZ());
+            Location blue = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() -1, plc.getBlockZ());
+            Location indigo = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() -2, plc.getBlockZ());
+            Location violet = new Location(plc.getWorld(), plc.getBlockX(), plc.getBlockY() -3, plc.getBlockZ());
             setBlock(Material.STAINED_GLASS, red, 14);
             setBlock(Material.STAINED_GLASS, orange, 1);
             setBlock(Material.STAINED_GLASS, yellow, 4);
